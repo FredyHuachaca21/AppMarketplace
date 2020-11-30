@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AppMarketplace"
+    }
+  },
+  "defaultProject": "AppMarketplace",
+  "cli": {
+    "analytics": "a18b66f7-3924-4ffe-bfc7-21e6691a2cc9"
+  }
 }
