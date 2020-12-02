@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class NopagefoundComponent  {
 
-year = new Date().getUTCFullYear();
+year = new Date().getFullYear();
 }
