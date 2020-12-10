@@ -24,11 +24,14 @@ background-repeat: no-repeat;
 background-position: center center;
 height: 100%;
 width: 100%;
-padding: 10% 0;
+padding: 5% 0;
 position: fixed; }
 
 .login-box {
 width: 400px;
+border-radius: 10px;
+/* height: 500px; */
+background-color: rgb(223, 241, 243);
 margin: 0 auto; }
 .login-box .footer {
 width: 100%;
@@ -38,8 +41,8 @@ right: 0px; }
 display: block;
 margin-bottom: 30px; }
 
-#recoverform {
-display: none; }
+/* #recoverform {
+display: none; } */
 
 .login-sidebar {
 padding: 0px;

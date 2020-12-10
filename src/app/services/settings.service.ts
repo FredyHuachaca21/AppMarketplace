@@ -8,7 +8,7 @@ export class SettingsService {
   private linkTheme = document.querySelector('#theme');
 
   constructor() { 
-    console.log('Settings Services')
+    // console.log('Settings Services')
 
     const url = localStorage.getItem('theme') || './assets/css/colors/megna-dark.css';
     this.linkTheme.setAttribute('href', url);

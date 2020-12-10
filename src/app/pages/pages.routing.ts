@@ -24,6 +24,8 @@ import { UnitMeasureComponent } from './unit-measure/unit-measure.component';
 import { VehiculesComponent } from './vehicules/vehicules.component';
 import { VoucherComponent } from './voucher/voucher.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 const routes: Routes = [
   {
@@ -31,32 +33,38 @@ const routes: Routes = [
     component: PagesComponent,
 
     children: [
-      { path: '', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafica1', component: Grafica1Component },
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'pages', component: PagesComponent },
-      { path: 'product', component: ProductComponent },
-      { path: 'category', component: CategoryComponent },
-      { path: 'brand', component: BrandComponent },
-      { path: 'access', component: AccessComponent },
-      { path: 'direcction', component: DirecctionComponent },
-      { path: 'driver', component: DriverComponent },
-      { path: 'employee', component: EmployeeComponent },
-      { path: 'entry', component: EntryComponent },
-      { path: 'entry-details', component: EntryDetailsComponent },
-      { path: 'local', component: LocalComponent },
-      { path: 'messages', component: MessagesComponent },
-      { path: 'order-detail', component: OrderDetailsComponent },
-      { path: 'order', component: OrdersComponent },
-      { path: 'person', component: PersonComponent },
-      { path: 'role', component: RoleComponent },
-      { path: 'type-vehicule', component: TypeVehiculesComponent },
-      { path: 'unit-measure', component: UnitMeasureComponent },
-      { path: 'user', component: UnitMeasureComponent },
-      { path: 'vehicules', component: VehiculesComponent },
-      { path: 'voucher', component: VoucherComponent },
-      { path: 'account-settings', component: AccountSettingsComponent },
+      { path: '', component: DashboardComponent, data: {titulo: 'Dashboard'}},
+      { path: 'progress', component: ProgressComponent, data: {titulo: 'Progress'}},
+      { path: 'grafica1', component: Grafica1Component, data: {titulo: 'Grafica1'}},
+      { path: 'dashboard', component: DashboardComponent, data: {titulo: 'Dashboard'}},
+
+      { path: 'pages', component: PagesComponent, data: {titulo: 'Dashboard'}},
+
+      { path: 'product', component: ProductComponent, data: {titulo: 'Product'}},
+      { path: 'employee', component: EmployeeComponent, data: {titulo: 'Employee'}},
+      { path: 'person', component: PersonComponent, data: {titulo: 'Person'}},
+      { path: 'category', component: CategoryComponent, data: {titulo: 'Category'}},
+      { path: 'brand', component: BrandComponent, data: {titulo: 'Brand'}},
+      { path: 'user', component: UnitMeasureComponent, data: {titulo: 'User'}},
+      { path: 'vehicules', component: VehiculesComponent, data: {titulo: 'Vehicules'}},
+      { path: 'order', component: OrdersComponent, data: {titulo: 'Order'}},
+      { path: 'entry', component: EntryComponent, data: {titulo: 'Entry'}},
+      { path: 'access', component: AccessComponent, data: {titulo: 'Access'}},
+      { path: 'direcction', component: DirecctionComponent, data: {titulo: 'Direcction'}},
+      { path: 'driver', component: DriverComponent, data: {titulo: 'Driver'}},
+      { path: 'local', component: LocalComponent, data: {titulo: 'Local'}},
+      { path: 'messages', component: MessagesComponent, data: {titulo: 'Messages'}},
+      { path: 'role', component: RoleComponent, data: {titulo: 'Role'}},
+      { path: 'voucher', component: VoucherComponent, data: {titulo: 'Voucher'}},
+
+      { path: 'entry-details', component: EntryDetailsComponent, data: {titulo: 'Entry Details'}},
+      { path: 'order-detail', component: OrderDetailsComponent, data: {titulo: 'Order Detail'}},
+      { path: 'unit-measure', component: UnitMeasureComponent, data: {titulo: 'Unit Measure'}},
+      { path: 'type-vehicule', component: TypeVehiculesComponent, data: {titulo: 'Type Vehicule'}},
+
+      { path: 'account-settings', component: AccountSettingsComponent, data: {titulo: 'Ajustes de Tema'}},
+      { path: 'promesas', component: PromesasComponent, data: {titulo: 'Promesas'}},
+      { path: 'rxjs', component: RxjsComponent, data: {titulo: 'Rxjs'}},
 
       //   {    path: '', redirectTo: '/dashboard', pathMatch: 'full'  },
     ],

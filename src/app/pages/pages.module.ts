@@ -6,10 +6,13 @@ import { FormsModule } from '@angular/forms';
 // import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
 
+// Modulos Personalizados
+import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from '../components/components.module';
+
 import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SharedModule } from '../shared/shared.module';
 import { PagesComponent } from './pages.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
@@ -32,6 +35,8 @@ import { UserComponent } from './user/user.component';
 import { VehiculesComponent } from './vehicules/vehicules.component';
 import { VoucherComponent } from './voucher/voucher.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +65,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     VehiculesComponent,
     VoucherComponent,
     AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent,
   ],
   exports: [
     ProgressComponent,
@@ -94,6 +101,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     SharedModule,
     // AppRoutingModule,
     RouterModule,
+    ComponentsModule
   ],
 })
 export class PagesModule {}
