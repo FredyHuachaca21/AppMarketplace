@@ -1,6 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
 import { ActivationEnd, Router } from '@angular/router';
-import { EEXIST } from 'constants';
 import { Subscription } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 
@@ -25,6 +24,7 @@ export class BreadcrumbsComponent implements OnDestroy {
   ngOnDestroy(): void {
     this.tituloSubs$.unsubscribe();
   }
+ 
 
   getArgumentosRuta(){
    return this.router.events

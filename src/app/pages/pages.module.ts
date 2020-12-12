@@ -37,6 +37,7 @@ import { VoucherComponent } from './voucher/voucher.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { EditCategoryComponent } from './edit-category/edit-category.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AccountSettingsComponent,
     PromesasComponent,
     RxjsComponent,
+    EditCategoryComponent,
   ],
   exports: [
     ProgressComponent,

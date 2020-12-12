@@ -1,1 +1,46 @@
-<p>category works!</p>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table full-color-table full-primary-table hover-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>CATEGORIA</th>
+                                <th>DESCRIPCIÓN</th>
+                                <th>ESTADO</th>
+                                <th>ACCIÓN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Frutas</td>
+                                <td>Eichmann</td>
+                                <td>Activo</td>
+                                <td class="btn-toolbar">
+                                    <button (click)="goToCategory()" class="btn btn-outline-info">Editar</button>
+                                    <button class="btn tn btn-outline-danger margin-left">Eliminar</button>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Abarrotes</td>
+                                <td>Prohaska</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Lacteos</td>
+                                <td>Rogahn</td>
+                                <td>Activo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

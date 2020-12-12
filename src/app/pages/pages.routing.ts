@@ -26,6 +26,7 @@ import { VoucherComponent } from './voucher/voucher.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { EditCategoryComponent } from './edit-category/edit-category.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,7 @@ const routes: Routes = [
       { path: 'messages', component: MessagesComponent, data: {titulo: 'Messages'}},
       { path: 'role', component: RoleComponent, data: {titulo: 'Role'}},
       { path: 'voucher', component: VoucherComponent, data: {titulo: 'Voucher'}},
+      { path: 'edit-cat', component: EditCategoryComponent, data: {titulo: 'Category Edit'}},
 
       { path: 'entry-details', component: EntryDetailsComponent, data: {titulo: 'Entry Details'}},
       { path: 'order-detail', component: OrderDetailsComponent, data: {titulo: 'Order Detail'}},
